@@ -1,5 +1,7 @@
 from time import sleep
 import sys
+import colorama
+from colorama import Fore
 
 string = """
     struct{'b/'}:
@@ -171,5 +173,5 @@ if (gidsetsize <= NGROUPS_SMALL)
 
 for letter in string:
     sleep(0.001)
-    sys.stdout.write(letter)
+    sys.stdout.write(Fore.GREEN+letter)
     sys.stdout.flush()
